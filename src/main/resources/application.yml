@@ -2,11 +2,18 @@ spring:
   datasource:
     username: root        #======= Need Correct spaces(Tabs) for work this code ######
     password: sahan2004              #====   Space meaning is path #########
-    url: jdbc:mysql://localhost:3306/student_crm
+    url: jdbc:mysql://localhost:3306/student_crm?createDatabaseIfNotExist=true
 
+
+    ##### ?createDatabaseIfNotExist=true     <==  Initialize Server And CreateDatabase From application.yml file  =====>  #####
 
 
          #### One Lined Database URL #######
 
 #spring.datasource.url: mysql://localhost:3306/student_crm
 
+
+      # Create Table in mySql server without typing quarrys
+  jpa:
+    hibernate:
+      ddl-Auto: create
