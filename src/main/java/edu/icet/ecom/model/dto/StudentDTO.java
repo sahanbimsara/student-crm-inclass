@@ -19,6 +19,4 @@ public class StudentDTO {
 
     private String email;
 
-
-
 }
